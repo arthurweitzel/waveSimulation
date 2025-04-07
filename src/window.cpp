@@ -1,4 +1,4 @@
-#include "../include/window.hpp"
+#include "window.hpp"
 #include <iostream>
 
 Window::Window(int width, int height, char* title) {
@@ -7,21 +7,21 @@ Window::Window(int width, int height, char* title) {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    window = glfwCreateWindow(width, height, title, NULL, NULL);
-    if (!window) {
+    _window = glfwCreateWindow(width, height, title, NULL, NULL);
+    if (!_window) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
         exit(-1);
     }
 
-    glfwMakeContextCurrent(window);
+    glfwMakeContextCurrent(_window);
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cout << "Failed to initialize GLAD" << std::endl;
         exit(-1);
     }
     
     glViewport(0, 0, width, height);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    glfwSetFramebufferSizeCallback(_window, framebuffer_size_callback);
 }
 
 Window::~Window() {
@@ -29,17 +29,17 @@ Window::~Window() {
 }
 
 bool Window::shouldClose() const{
-    return glfwWindowShouldClose(window);
+    return glfwWindowShouldClose(_window);
 }
 
 void Window::processInput() {
-    if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS) {
-        glfwSetWindowShouldClose(window, true);
+    if (glfwGetKey(_window, GLFW_KEY_Q) == GLFW_PRESS) {
+        glfwSetWindowShouldClose(_window, true);
     }
 }
 
 void Window::swapBuffers() {
-    glfwSwapBuffers(window);
+    glfwSwapBuffers(_window);
 }
 
 void Window::pollEvents() {
@@ -47,7 +47,7 @@ void Window::pollEvents() {
 }
 
 GLFWwindow* Window::getNativeWindow() const {
-    return window;
+    return _window;
 }
 
 void Window::framebuffer_size_callback(GLFWwindow* window, int width, int height) {

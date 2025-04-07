@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/waveSimulation.dir/link.d CMakeFiles/waveSimulation.dir/src/main.cpp.o CMakeFiles/waveSimulation.dir/src/glad.c.o CMakeFiles/waveSimulation.dir/src/window.cpp.o -o waveSimulation  -lglfw

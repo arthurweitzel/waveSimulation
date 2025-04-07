@@ -5,7 +5,7 @@
 
 class Window {
     public:    
-        Window(const int width, const int height, char* title); // char* pois o title original é implementado em C
+        Window(const int width, const int height, char* title); 
         ~Window();
 
         bool shouldClose() const;
@@ -15,6 +15,6 @@ class Window {
         GLFWwindow* getNativeWindow() const;
 
     private:
-        GLFWwindow* window;
+        GLFWwindow* _window;
         static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 };

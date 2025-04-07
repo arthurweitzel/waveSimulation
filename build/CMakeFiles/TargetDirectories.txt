@@ -1,0 +1,3 @@
+/home/weitzel/waveSimulation/build/CMakeFiles/waveSimulation.dir
+/home/weitzel/waveSimulation/build/CMakeFiles/edit_cache.dir
+/home/weitzel/waveSimulation/build/CMakeFiles/rebuild_cache.dir
