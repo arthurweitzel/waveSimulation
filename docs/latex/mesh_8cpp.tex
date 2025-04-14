@@ -1,0 +1,54 @@
+\doxysection{src/mesh.cpp File Reference}
+\hypertarget{mesh_8cpp}{}\label{mesh_8cpp}\index{src/mesh.cpp@{src/mesh.cpp}}
+{\ttfamily \#include "{}mesh.\+hpp"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/type\+\_\+ptr.\+hpp$>$}\newline
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mesh_8cpp_a94affbdd2b20c61bcc4dfdd86e1ffea6}{vertex\+Shader\+Source}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mesh_8cpp_a64fbb08868038fa2dc1759b84fd3eb5c}{fragment\+Shader\+Source}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{mesh_8cpp_a64fbb08868038fa2dc1759b84fd3eb5c}\index{mesh.cpp@{mesh.cpp}!fragmentShaderSource@{fragmentShaderSource}}
+\index{fragmentShaderSource@{fragmentShaderSource}!mesh.cpp@{mesh.cpp}}
+\doxysubsubsection{\texorpdfstring{fragmentShaderSource}{fragmentShaderSource}}
+{\footnotesize\ttfamily \label{mesh_8cpp_a64fbb08868038fa2dc1759b84fd3eb5c} 
+const char\texorpdfstring{$\ast$}{*} fragment\+Shader\+Source}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ R\textcolor{stringliteral}{"{}(}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \#version\ 330\ core}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ out\ vec4\ FragColor;}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ void\ main()\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ FragColor\ =\ vec4(1.0);}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{)"{}}}
+
+\end{DoxyCode}
+\Hypertarget{mesh_8cpp_a94affbdd2b20c61bcc4dfdd86e1ffea6}\index{mesh.cpp@{mesh.cpp}!vertexShaderSource@{vertexShaderSource}}
+\index{vertexShaderSource@{vertexShaderSource}!mesh.cpp@{mesh.cpp}}
+\doxysubsubsection{\texorpdfstring{vertexShaderSource}{vertexShaderSource}}
+{\footnotesize\ttfamily \label{mesh_8cpp_a94affbdd2b20c61bcc4dfdd86e1ffea6} 
+const char\texorpdfstring{$\ast$}{*} vertex\+Shader\+Source}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ R\textcolor{stringliteral}{"{}(}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \#version\ 330\ core}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ layout\ (location)\ =\ 0\ in\ vec3\ aPos;}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ uniform\ mat4\ MVP}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ void\ main()\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ gl\_Position\ =\ MVP\ *\ vec4(aPos,\ 1.0);}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{)"{}}}
+
+\end{DoxyCode}

@@ -1,0 +1,40 @@
+\doxysection{mesh.\+hpp}
+\hypertarget{mesh_8hpp_source}{}\label{mesh_8hpp_source}\index{include/mesh.hpp@{include/mesh.hpp}}
+\mbox{\hyperlink{mesh_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once\ }}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{glad_8h}{glad/glad.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <GLFW/glfw3.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <glm/glm.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMesh_adeddfadac1947f02f5d551dcb73f0fee}{Mesh}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMesh_adeddfadac1947f02f5d551dcb73f0fee}{Mesh}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{glad_8h_a79ef9eb3e59c4bb34c4b9fbeb8d28ff7}{size}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{glad_8h_a09012ea95ebbbe1c032db7c68b54291e}{width}});}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \mbox{\hyperlink{classMesh_a5efe4da1a4c0971cfb037bd70304c303}{\string~Mesh}}();}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMesh_a996a8668fa2ca7d95d6d10744c833bc8}{draw}}();}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMesh_a032107b8a090f67f12b427835f9a6db4}{setPosition}}(\textcolor{keyword}{const}\ glm::vec3);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::vector\ <float>\ \_vertices;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::vector\ <GLuint>\ \_index;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ glm::mat4\ \_modelMatrix;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ \ \ \ \ \ \ \ VAO\ =\ }}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ \ \ \ \ \ \ \ VBO\ =\ Verter\ Buffer\ Objects\ -\/>\ a\ buffer\ that\ contains\ verter\ atributes\ and\ data}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ \ \ \ \ \ \ \ EBO\ =\ }}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{glad_8h_a68c4714e43d8e827d80759f9cb864f3c}{GLuint}}\ \_vao;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{glad_8h_a68c4714e43d8e827d80759f9cb864f3c}{GLuint}}\ \_vbo;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{glad_8h_a68c4714e43d8e827d80759f9cb864f3c}{GLuint}}\ \_ebo;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{glad_8h_a68c4714e43d8e827d80759f9cb864f3c}{GLuint}}\ \_shaderProgram;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ initShaders();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ initBuffers();}
+\DoxyCodeLine{00034\ \};}
+
+\end{DoxyCode}

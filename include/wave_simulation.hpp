@@ -5,5 +5,5 @@
 
 class WaveSimulation {
     public:
-
+    
 };

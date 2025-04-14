@@ -1,0 +1,26 @@
+\doxysection{window.\+hpp}
+\hypertarget{window_8hpp_source}{}\label{window_8hpp_source}\index{include/window.hpp@{include/window.hpp}}
+\mbox{\hyperlink{window_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once\ }}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{glad_8h}{../include/glad/glad.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <GLFW/glfw3.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWindow_ad0b7d251acbac1499c2a90f93ffd3832}{Window}}\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{public}:\ \ \ \ }
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classWindow_ad0b7d251acbac1499c2a90f93ffd3832}{Window}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{glad_8h_a09012ea95ebbbe1c032db7c68b54291e}{width}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{glad_8h_a456943498a720df0f4b62bafa5dad93c}{height}},\ \textcolor{keywordtype}{char}*\ title);\ }
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classWindow_a245d821e6016fa1f6970ccbbedd635f6}{\string~Window}}();}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWindow_a1caaf150558c0c35a8811f19ccac817d}{shouldClose}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWindow_a332c55f741d213ea2efd587e67872da0}{processInput}}();}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWindow_af6ffedb8d12d5551bdb4c298de87ed56}{swapBuffers}}();}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWindow_aa5e409ecd45b4430ed72f4872a8f667f}{pollEvents}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ GLFWwindow*\ \mbox{\hyperlink{classWindow_a13528af31eb18b677b4c8b2745477eb0}{getNativeWindow}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ GLFWwindow*\ \_window;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ framebuffer\_size\_callback(GLFWwindow*\ window,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{glad_8h_a09012ea95ebbbe1c032db7c68b54291e}{width}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{glad_8h_a456943498a720df0f4b62bafa5dad93c}{height}});}
+\DoxyCodeLine{00020\ \};}
+
+\end{DoxyCode}

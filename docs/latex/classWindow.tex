@@ -1,0 +1,77 @@
+\doxysection{Window Class Reference}
+\hypertarget{classWindow}{}\label{classWindow}\index{Window@{Window}}
+
+
+{\ttfamily \#include $<$window.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWindow_ad0b7d251acbac1499c2a90f93ffd3832}{Window}} (const int \mbox{\hyperlink{glad_8h_a09012ea95ebbbe1c032db7c68b54291e}{width}}, const int \mbox{\hyperlink{glad_8h_a456943498a720df0f4b62bafa5dad93c}{height}}, char \texorpdfstring{$\ast$}{*}title)
+\item 
+\mbox{\hyperlink{classWindow_a245d821e6016fa1f6970ccbbedd635f6}{\texorpdfstring{$\sim$}{\string~}\+Window}} ()
+\item 
+bool \mbox{\hyperlink{classWindow_a1caaf150558c0c35a8811f19ccac817d}{should\+Close}} () const
+\item 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{classWindow_a332c55f741d213ea2efd587e67872da0}{process\+Input}} ()
+\item 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{classWindow_af6ffedb8d12d5551bdb4c298de87ed56}{swap\+Buffers}} ()
+\item 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{classWindow_aa5e409ecd45b4430ed72f4872a8f667f}{poll\+Events}} ()
+\item 
+GLFWwindow \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classWindow_a13528af31eb18b677b4c8b2745477eb0}{get\+Native\+Window}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWindow_ad0b7d251acbac1499c2a90f93ffd3832}\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily \label{classWindow_ad0b7d251acbac1499c2a90f93ffd3832} 
+Window\+::\+Window (\begin{DoxyParamCaption}\item[{const int}]{width}{, }\item[{const int}]{height}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{title}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWindow_a245d821e6016fa1f6970ccbbedd635f6}\index{Window@{Window}!````~Window@{\texorpdfstring{$\sim$}{\string~}Window}}
+\index{````~Window@{\texorpdfstring{$\sim$}{\string~}Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Window()}{\string~Window()}}
+{\footnotesize\ttfamily \label{classWindow_a245d821e6016fa1f6970ccbbedd635f6} 
+Window\+::\texorpdfstring{$\sim$}{\string~}\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classWindow_a13528af31eb18b677b4c8b2745477eb0}\index{Window@{Window}!getNativeWindow@{getNativeWindow}}
+\index{getNativeWindow@{getNativeWindow}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{getNativeWindow()}{getNativeWindow()}}
+{\footnotesize\ttfamily \label{classWindow_a13528af31eb18b677b4c8b2745477eb0} 
+GLFWwindow \texorpdfstring{$\ast$}{*} Window\+::get\+Native\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classWindow_aa5e409ecd45b4430ed72f4872a8f667f}\index{Window@{Window}!pollEvents@{pollEvents}}
+\index{pollEvents@{pollEvents}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{pollEvents()}{pollEvents()}}
+{\footnotesize\ttfamily \label{classWindow_aa5e409ecd45b4430ed72f4872a8f667f} 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Window\+::poll\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWindow_a332c55f741d213ea2efd587e67872da0}\index{Window@{Window}!processInput@{processInput}}
+\index{processInput@{processInput}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{processInput()}{processInput()}}
+{\footnotesize\ttfamily \label{classWindow_a332c55f741d213ea2efd587e67872da0} 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Window\+::process\+Input (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWindow_a1caaf150558c0c35a8811f19ccac817d}\index{Window@{Window}!shouldClose@{shouldClose}}
+\index{shouldClose@{shouldClose}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{shouldClose()}{shouldClose()}}
+{\footnotesize\ttfamily \label{classWindow_a1caaf150558c0c35a8811f19ccac817d} 
+bool Window\+::should\+Close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classWindow_af6ffedb8d12d5551bdb4c298de87ed56}\index{Window@{Window}!swapBuffers@{swapBuffers}}
+\index{swapBuffers@{swapBuffers}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{swapBuffers()}{swapBuffers()}}
+{\footnotesize\ttfamily \label{classWindow_af6ffedb8d12d5551bdb4c298de87ed56} 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} Window\+::swap\+Buffers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{window_8hpp}{window.\+hpp}}\item 
+src/\mbox{\hyperlink{window_8cpp}{window.\+cpp}}\end{DoxyCompactItemize}
