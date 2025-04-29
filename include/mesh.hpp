@@ -6,29 +6,22 @@
 #include <vector>
 
 class Mesh {
-public:
-        Mesh(int size, int width);
+    public:
+        Mesh(int axisX, int axisZ);
        ~Mesh();
         
         void draw();
-        void setPosition(const glm::vec3);
-
     private:
         std::vector <float> _vertices;
-        std::vector <GLuint> _index;
+        std::vector <unsigned int> _indices;
         glm::mat4 _modelMatrix;
-        /*
-        VAO = 
-        VBO = Verter Buffer Objects -> a buffer that contains verter atributes and data
-        EBO = 
-        */
-
-
         GLuint _vao;
         GLuint _vbo;
         GLuint _ebo;
-        GLuint _shaderProgram;
+        int _axisX;
+        int _axisZ;
 
-        void initShaders();
-        void initBuffers();
+        void createMesh();
+        void setBuffers();
+
 };
